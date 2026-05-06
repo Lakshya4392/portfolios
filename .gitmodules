@@ -1,3 +1,6 @@
 [submodule "clients/qala-studio"]
 	path = clients/qala-studio
 	url = https://github.com/Lakshya4392/QALASTUDIO.git
+[submodule "clients/pro-athlete-fitness"]
+	path = clients/pro-athlete-fitness
+	url = https://github.com/harsh-dronie/Pro-Athlete-Fitness.git
