@@ -1,14 +1,35 @@
-# Master Portfolio Hub
+# Antigravity Master Portfolio Hub
 
-This is the central hub for all client website projects.
+Welcome to the single source of truth for all Antigravity client projects.
 
-## Structure
-- `clients/`: Git submodules for each client project.
-- `docs/`: Global vision, standards, and onboarding guides.
-- `artifacts/`: Proposals and high-level design assets.
+## 📁 Repository Structure
+- `clients/`: Every client project is linked here as a **Git Submodule**.
+- `docs/`: Global Governance docs (Vision, Standards, Tech Stack).
+- `artifacts/`: Proposals, pitch decks, and design assets.
 
-## How to Clone
-`git clone --recurse-submodules https://github.com/Lakshya4392/portfolios.git`
+## 🚀 Getting Started (How to Clone)
+To get all projects at once, use:
+```bash
+git clone --recurse-submodules https://github.com/Lakshya4392/portfolios.git
+```
+If you already cloned it and the folders are empty:
+```bash
+git submodule update --init --recursive
+```
 
-## Automation
-Every client repo is equipped with a `notify-portfolio.yml` workflow that automatically updates its submodule pointer here on every push to main.
+## 🛠️ Developer Guide: What are Submodules?
+Submodules are like "live links" to other repositories. 
+- **The Hub** (`portfolios`) keeps track of which version (commit) each client is on.
+- **The Spokes** (Individual repos) hold the actual code.
+
+### How to add a new client:
+1. `cd clients`
+2. `git submodule add <REPO_URL> <CLIENT_NAME>`
+3. `git commit -m "add <CLIENT_NAME> to portfolio"`
+4. `git push origin main`
+
+## 🤖 Automation
+This hub is powered by GitHub Actions. When you push to any client repo, the **notify-portfolio** workflow automatically updates the pointer here. No manual sync required!
+
+---
+*Verified by AG Brain — Standardized Infrastructure v1.0*
