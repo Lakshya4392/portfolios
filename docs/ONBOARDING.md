@@ -1,14 +1,18 @@
-# Developer Onboarding
+# Onboarding Guide
 
-## Getting Started
-1. Clone the master repo: `git clone --recurse-submodules <portfolio-url>`
-2. Run `git submodule update --init --recursive` to fetch all client projects.
+## 1. Cloning the Portfolio
+Use the recursive clone command to get everything:
+```bash
+git clone --recurse-submodules https://github.com/Lakshya4392/portfolios.git
+```
 
-## Credentials
-- Request access to the organization's GitHub secrets.
-- Copy .env.example to .env in each client folder.
+## 2. Getting Access
+- Request access to the GitHub Organization.
+- Set up your SSH keys.
+- Get the `PORTFOLIO_PAT` from the admin for local testing.
 
-## Making Changes
-- Create a new branch: `agent/<name>/<feature>`.
-- Use worktrees for parallel work.
-- Always update CHANGELOG.md before PR.
+## 3. Making Your First Contribution
+1. Choose a client in `clients/`.
+2. Create a branch: `git checkout -b feat/your-task`.
+3. Make changes and commit with prefix: `[client-name] feat: <message>`.
+4. Push and wait for the automation to update the Hub.
