@@ -4,6 +4,3 @@
 [submodule "clients/pro-athlete-fitness"]
 	path = clients/pro-athlete-fitness
 	url = https://github.com/harsh-dronie/Pro-Athlete-Fitness.git
-[submodule "clients/weather-app"]
-	path = clients/weather-app
-	url = https://github.com/harsh-dronie/weather-app.git
