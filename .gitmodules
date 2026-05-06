@@ -1,0 +1,3 @@
+[submodule "clients/qala-studio"]
+	path = clients/qala-studio
+	url = https://github.com/Lakshya4392/QALASTUDIO.git
